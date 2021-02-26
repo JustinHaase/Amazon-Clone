@@ -18,28 +18,93 @@ document.getElementById("title").addEventListener("mouseout", function() {
 //   });
 // }
 
-const container = document.querySelector(".container");
-
-function showItems(){
-
-let card = document.createElement('div');
-card.className = "card";
-let cardInnerHtml =
-`
-        <div class="image">
-            <img src="BYSKETCHYTANK.png" alt="T-Shirt">
-        </div>
-        <div class="title">
-            <h2>Sketchy Tank T-shirt</h2>
-        </div>
-        <div class="des">
-            <p>$24.99</p>
-            <button><b>Add to cart</b></button>
-        </div>
-`
-card.innerHTML = cardInnerHtml;
-
-return card;
+const data = [{
+  img: "BYSKETCHYTANK.png",
+  price: "$24.99",
+  description: "T-Shirt",
+  button: "Add to Cart"
+},{
+  img: "BYSKETCHYTANK.png",
+  price: "$14.99",
+  description: "T-Shirt",
+  button: "Add to Cart"
+},{
+  img: "BYSKETCHYTANK.png",
+  price: "$4.99",
+  description: "T-Shirt",
+  button: "Add to Cart"
+},{
+  img: "BYSKETCHYTANK.png",
+  price: "$34.99",
+  description: "T-Shirt",
+  button: "Sold Out"
+},{
+  img: "BYSKETCHYTANK.png",
+  price: "$44.99",
+  description: "T-Shirt",
+  button: "Add to Cart"
+},{
+  img: "BYSKETCHYTANK.png",
+  price: "$24.99",
+  description: "T-Shirt",
+  button: "Add to Cart"
+},{
+  img: "BYSKETCHYTANK.png",
+  price: "$14.99",
+  description: "T-Shirt",
+  button: "Add to Cart"
+},{
+  img: "BYSKETCHYTANK.png",
+  price: "$4.99",
+  description: "T-Shirt",
+  button: "Add to Cart"
+},{
+  img: "BYSKETCHYTANK.png",
+  price: "$34.99",
+  description: "T-Shirt",
+  button: "Sold Out"
+},{
+  img: "BYSKETCHYTANK.png",
+  price: "$44.99",
+  description: "T-Shirt",
+  button: "Add to Cart"
+},{
+  img: "BYSKETCHYTANK.png",
+  price: "$34.99",
+  description: "T-Shirt",
+  button: "Sold Out"
+},{
+  img: "BYSKETCHYTANK.png",
+  price: "$44.99",
+  description: "T-Shirt",
+  button: "Add to Cart"
 }
 
-container.appendChild(showItems());
+];
+
+//.for each will list our the above items (image price etc) populating a result
+// const container = document.querySelector(".container");
+// data.forEach((result) => {
+  // Create card element
+
+  const container = document.querySelector(".container");
+  const card = document.createElement('div');
+
+  data.forEach((result)=>{
+  
+  let card = document.createElement('div');
+  card.className = "card";
+  let cardInnerHtml =
+  `
+          <div class="image"><img src="BYSKETCHYTANK.png" alt="T-Shirt"></div>
+          <div class="title"><h2>Sketchy Tank T-shirt</h2></div>
+          <div class="des">
+              <p>$24.99</p>
+              <button><b>${result.button}/b></button>
+          </div>
+  `
+  container.innerHTML += cardInnerHtml;
+
+  })
+  
+  

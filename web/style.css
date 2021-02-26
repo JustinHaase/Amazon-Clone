@@ -14,9 +14,13 @@
     text-align: center;
 }
 
-.container {
+.container-nav {
  
     text-align: center;
+}
+
+.container {
+    display: grid;
 }
 
 h1 {
@@ -34,6 +38,15 @@ li {
     text-decoration: none;
     margin-top: 0;
  }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(206, 156, 64);
+}
 
  .cart {
     color: black;
@@ -81,7 +94,7 @@ h2 {
 
 .des{
  text-align: center;
- color: black;
+ color:black;
 }
 /*------------------*/
 
