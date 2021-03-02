@@ -7,11 +7,13 @@
 
 .header {
     font-size: 30px;
-    background-color: #FFFFFF;
+    background-color:rgba(117, 81, 247, 0.342);
     position: fixed;
     height: 250px;
     width: 100%;
     text-align: center;
+    margin-left: auto;
+    margin-top: 0;
 }
 
 .container-nav {
@@ -22,6 +24,7 @@
 h1 {
    text-align: center;
    color: rgb(206, 156, 64);
+   margin-top: 0;
 }
 
 ul {
@@ -51,33 +54,60 @@ a:hover{
 /*--------------------*/
    
 
-body {
+body, html{
     background-color: rgb(252, 251, 249);
     height: 100vh;
     margin: 0, 0, 200px;
+    padding: none;
     justify-content: center;
     align-items: center;
   }
 
+
+
+  .container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    justify-content: center;
+    text-align: center;
+}
 
   /*---sales card---*/
 .card {
     width: 20%;
     display: inline-block;
     box-shadow: 2px 2px 20px black;
-    border-radius: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     margin: 2%;
-    min-width: 126px;
+    min-width: 150px;
     min-height: 245px;
-    max-width: 126px;
+    max-width: 150px;
     max-height: 245px;
+    background-color: rgba(117, 81, 247, 0.342);
    }
 
-.image {
- border-top-right-radius: 5px;
- border-top-left-radius: 5px;
- max-width: 245px;
+/* .image {
+ /* border-top-right-radius: 5px;
+ border-top-left-radius: 5px; */
+ /* max-width: 100%;
+ max-height: 100%;
+ z-index: 1; */
+/* } */ 
+.image{
+    border-top-left-radius: 20px;
+    background-color: rgb(252, 251, 249);
 }
+
+img{
+    border-top-left-radius: 20px;
+    max-width:150px;
+    max-height: 150px;
+    margin: 0;
+    padding:0%;
+    }
 
 .title{
  text-align: center;
@@ -91,18 +121,18 @@ h2 {
 .des{
  text-align: center;
  color:black;
+ background-color: rgba(51, 5, 136, 0.192);
+ border-bottom-right-radius: 20px;
+ width: 100%;
+ height: 84px;
+
 }
+
+.des button {
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+background-color: rgba(252, 251, 249, 0.26);
+border-color: rgba(252, 251, 249, 0.26);
+}
+
 /*------------------*/
-
-
-.container {
-    display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
-    grid-template-rows: auto;
-}
-
-
-img{
-    max-width:100%;
-    max-height:100%
-    }
