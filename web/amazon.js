@@ -19,63 +19,63 @@ document.getElementById("title").addEventListener("mouseout", function() {
 // }
 
 const data = [{
-  img: "BYSKETCHYTANK.png",
+  img: src='img src="1998BK.png" alt="T-Shirt"',
   price: "$24.99",
   description: "T-Shirt",
   button: "Add to Cart"
 },{
-  img: "BYSKETCHYTANK.png",
-  price: "$14.99",
-  description: "T-Shirt",
-  button: "Add to Cart"
-},{
-  img: "BYSKETCHYTANK.png",
-  price: "$4.99",
-  description: "T-Shirt",
-  button: "Add to Cart"
-},{
-  img: "BYSKETCHYTANK.png",
+  img: src='img src="1997BK.png" alt="T-Shirt"',
   price: "$34.99",
+  description: "Long-Sleeve Shirt",
+  button: "Add to Cart"
+},{
+  img: src='img src="1942BK.png" alt="T-Shirt"',
+  price: "$4.99",
+  description: "Long-Sleeve Shirt",
+  button: "Add to Cart"
+},{
+  img: src='img src="1998BK.png" alt="T-Shirt"',
+  price: "$24.99",
   description: "T-Shirt",
   button: "Sold Out"
 },{
-  img: "BYSKETCHYTANK.png",
-  price: "$44.99",
-  description: "T-Shirt",
-  button: "Add to Cart"
-},{
-  img: "BYSKETCHYTANK.png",
+  img: src='img src="1998BK.png" alt="T-Shirt"',
   price: "$24.99",
   description: "T-Shirt",
   button: "Add to Cart"
 },{
-  img: "BYSKETCHYTANK.png",
-  price: "$14.99",
+  img: src='img src="1998BK.png" alt="T-Shirt"',
+  price: "$24.99",
   description: "T-Shirt",
   button: "Add to Cart"
 },{
-  img: "BYSKETCHYTANK.png",
-  price: "$4.99",
+  img: src='img src="1998BK.png" alt="T-Shirt"',
+  price: "$24.99",
   description: "T-Shirt",
   button: "Add to Cart"
 },{
-  img: "BYSKETCHYTANK.png",
-  price: "$34.99",
+  img: src='img src="1998BK.png" alt="T-Shirt"',
+  price: "$24.99",
+  description: "T-Shirt",
+  button: "Add to Cart"
+},{
+  img: src='img src="1998BK.png" alt="T-Shirt"',
+  price: "$24.99",
   description: "T-Shirt",
   button: "Sold Out"
 },{
-  img: "BYSKETCHYTANK.png",
-  price: "$44.99",
+  img: src='img src="1998BK.png" alt="T-Shirt"',
+  price: "$24.99",
   description: "T-Shirt",
   button: "Add to Cart"
 },{
-  img: "BYSKETCHYTANK.png",
-  price: "$34.99",
+  img: src='img src="1998BK.png" alt="T-Shirt"',
+  price: "$24.99",
   description: "T-Shirt",
   button: "Sold Out"
 },{
-  img: "BYSKETCHYTANK.png",
-  price: "$44.99",
+  img: src='img src="1998BK.png" alt="T-Shirt"',
+  price: "$24.99",
   description: "T-Shirt",
   button: "Add to Cart"
 }
@@ -96,15 +96,39 @@ const data = [{
   card.className = "card";
   let cardInnerHtml =
   `
-          <div class="image"><img src="BYSKETCHYTANK.png" alt="T-Shirt"></div>
-          <div class="title"><h2>Sketchy Tank T-shirt</h2></div>
+          <div class="card">
+          <div class="image"><${result.img} alt="T-Shirt"></div>
+          <div class="title"><h2>${result.description}</h2></div>
           <div class="des">
-              <p>$24.99</p>
-              <button><b>${result.button}/b></button>
+              <p>${result.price}</p>
+              <button><b>${result.button}</b></button>
+          </div>
           </div>
   `
   container.innerHTML += cardInnerHtml;
 
   })
   
+  
+
+  
+  // const container = document.querySelector(".container");
+  // const card = document.createElement('div');
+
+  // data.forEach((result)=>{
+  
+  // let card = document.createElement('div');
+  // card.className = "card";
+  // let cardInnerHtml =
+  // `
+  //         <div class="image"><${result.img} alt="T-Shirt"></div>
+  //         <div class="title"><h2>${result.description}</h2></div>
+  //         <div class="des">
+  //             <p>${result.price}</p>
+  //             <button><b>${result.button}</b></button>
+  //         </div>
+  // `
+  // container.innerHTML += cardInnerHtml;
+
+  // })
   
